@@ -1,0 +1,13 @@
+---
+- name: I want to create users and groups
+  hosts: all
+  tasks:
+   - name: create group1
+     group:
+      name: cloudnloud
+      state: present
+   - name: create users
+     user:
+      name: fawaz 
+      comment: admin
+      groups: cloudnloud
