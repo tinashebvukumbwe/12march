@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: install package
-      package:
+      yum:
         name: httpd
         state: present
     - name: create an index.html
