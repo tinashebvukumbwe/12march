@@ -1,6 +1,6 @@
 ---
 - name: install httpd
-  hosts: ansible2.example.com
+  hosts: all
   tasks:
     - name: install package
       package:
