@@ -1,13 +1,13 @@
 ---
-- name: I want to create users and groups
+- name: Iam going to create users and groups using this playbook
   hosts: all
   tasks:
-   - name: create group1
+   - name: create an admin group
      group:
-      name: cloudnloud
+      name: admin
       state: present
-   - name: create users
+   - name: create admin users
      user:
-      name: fawaz 
+      name: tinashe 
       comment: admin
-      groups: cloudnloud
+      groups: admin
